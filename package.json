@@ -10,13 +10,12 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.1.2",
-    "flowbite": "^1.6.5",
-    "flowbite-vue": "^0.0.10",
     "v-wave": "^1.5.1",
     "vue": "^3.2.47",
     "vue-kinesis": "^2.0.5"
   },
   "devDependencies": {
+    "@kamona/tailwindcss-perspective": "^0.1.1",
     "@vitejs/plugin-vue": "^4.1.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",

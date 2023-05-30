@@ -4,9 +4,9 @@ import worldMapUrl from "../assets/world-map.svg"
 import logoRaw from "../assets/logo.svg?raw"
 
 
-function scrollToNext() {
-    const next = document.getElementById("contact")
-    next.scrollIntoView({ behavior: "smooth" })
+function scrollNext() {
+    document.getElementById("contact")
+        .scrollIntoView({ behavior: "smooth" })
 }
 </script>
 
@@ -32,20 +32,20 @@ function scrollToNext() {
         leave-to-class="transform opacity-0"
     >
         <div class="my-auto mx-auto z-10 text-white lg:inline-flex lg:gap-6">
-            <div class="w-24 xl:w-32 text-white drop-shadow-[0_0_10px_#ffffff]" v-html="logoRaw"></div>
+            <div class="pb-6 lg:pb-0 mx-auto w-24 xl:w-32 text-white drop-shadow-[0_0_10px_#ffffff]" v-html="logoRaw"></div>
             <p id="heading" class="
-                my-auto font-extrabold selection:bg-emerald-500 drop-shadow-[0_0_10px_#ffffff] shadow-emerald-500 text-white
+                my-auto text-center font-extrabold selection:bg-emerald-500 drop-shadow-[0_0_10px_#ffffff] shadow-emerald-500 text-white
                 text-5xl md:text-6xl lg:text-7xl xl:text-8xl
             ">
-                KAAN&nbsp;GROUP <span class="tracking-tighter">s.r.o.</span>
+                KAAN&nbsp;<span class="xl:uppercase">Group</span> <span class="tracking-tighter">s.r.o.</span>
             </p>
         </div>
     </Transition>
 </KinesisContainer>
 
-<div class="absolute bottom-10 flex w-full animate-bounce">
-    <svg @click="scrollToNext()" class="w-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
+<div class="absolute flex w-full animate-bounce bottom-0">
+    <svg @click="scrollNext()" class="w-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
     </svg>
 </div>
 

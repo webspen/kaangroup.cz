@@ -7,12 +7,8 @@ export default {
         "./index.html",
         "./src/**/*.{vue,js}",
         "./src/assets/**/*.svg",
-        "node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}",
-        "node_modules/flowbite/**/*.{js,jsx,ts,tsx}",  // To include Flowbite components styling
     ],
-    plugins: [
-        "flowbite/plugin"
-    ],
+    plugins: [],
     theme: {
         extend: {
             fontFamily: {

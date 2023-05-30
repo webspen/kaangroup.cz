@@ -5,6 +5,9 @@ import { ref } from "vue"
 const copied = ref(false)
 const ICO = "17945241"
 
+function scrollNext() {
+    document.getElementById("one").scrollIntoView({ behavior: "smooth" })
+}
 
 function execCopy() {
     navigator.clipboard.writeText(ICO)
@@ -51,6 +54,14 @@ function execCopy() {
 
     <p class="text-lg xl:text-2xl text-gray-300">Spisová značka</p>
     <p>C 32861 vedená u Krajského soudu v Českých Budějovicích</p>
+</div>
+
+<div class="relative">
+    <div class="absolute flex w-full animate-bounce bottom-0">
+        <svg @click="scrollNext()" class="w-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
+        </svg>
+    </div>
 </div>
 
 </section>

@@ -2,6 +2,9 @@
 import Landing from "./components/Landing.vue"
 import Contact from "./components/Contact.vue"
 import Footer from "./components/Footer.vue"
+import One from "./components/sections/One.vue"
+import Two from "./components/sections/Two.vue"
+import Three from "./components/sections/Three.vue"
 </script>
 
 <template>
@@ -10,6 +13,9 @@ import Footer from "./components/Footer.vue"
 
 <Landing />
 <Contact />
+<!-- <One />
+<Two />
+<Three /> -->
 <Footer />
 
 </main>
