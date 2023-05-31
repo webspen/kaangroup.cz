@@ -1,9 +1,28 @@
 <script setup>
 const sections = {
-    "Dokumenty": [ "Obchodní podmínky", "Zásady zpracování osobních dat" ],
-    "O nás": [ "O nás", "Kontakt" ],
-    "Sociální sítě": [ "Facebook", "Instagram" ],
-    "Společnosti": [ "Eita s.r.o.", "PPA Group s.r.o." ],
+    // "Dokumenty": [
+    //     {
+    //         text: "Obchodní podmínky",
+    //         link: "#",
+    //     },
+    // ],
+    "O nás": [
+        {
+            text: "O nás",
+            link: "#",
+        },
+        {
+            text: "Kontakt",
+            link: "#contact",
+        },
+    ],
+    "Společnosti": [
+        {
+            text: "PPA Real s.r.o.",
+            link: "https://rejstrik-firem.kurzy.cz/09268855/ppa-real-sro/",
+            target: "_blank",
+        },
+    ],
 }
 
 const copyrightYear = _ => {
@@ -22,7 +41,7 @@ const copyrightYear = _ => {
         <h2 class="mb-6 text-sm font-semibold uppercase text-white">{{ name }}</h2>
         <ul class="text-gray-400 font-medium">
             <li v-for="element in elements" class="mb-4">
-                <a href="#" class=" hover:underline">{{ element }}</a>
+                <a :target="element.target ?? '_self'" :href="element.link" class=" hover:underline">{{ element.text }}</a>
             </li>
         </ul>
     </div>
